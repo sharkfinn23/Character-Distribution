@@ -41,6 +41,8 @@ print('The distribution of characters in "'+string+'" is: ')
 list=list(string)
 list1=[]
 list1.extend([list.count('a'), list.count('b'), list.count('c'), list.count('d'), list.count('e'), list.count('f'), list.count('g'), list.count('h'), list.count('i'), list.count('j'), list.count('k'), list.count('l'), list.count('m'), list.count('n'), list.count('o'), list.count('p'), list.count('q'), list.count('r'), list.count('s'), list.count('t'), list.count('u'), list.count('v'), list.count('w'), list.count('x'), list.count('y'), list.count('z'),])
-
+list2=list(range(0,26))
+list3=list2[::-1]
+print(list2)
 print(list1)
     
