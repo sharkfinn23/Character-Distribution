@@ -37,16 +37,25 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
-string=input("Please enter a string of text (the bigger the better): ")
-print('The distribution of characters in "'+string+'" is: ')
-list=list(string)
+astring=(input("Please enter a string of text (the bigger the better): "))
+print('The distribution of characters in "'+astring+'" is: ')
+list=list(astring)
 list1=[]
 list1.extend([list.count('a'), list.count('b'), list.count('c'), list.count('d'), list.count('e'), list.count('f'), list.count('g'), list.count('h'), list.count('i'), list.count('j'), list.count('k'), list.count('l'), list.count('m'), list.count('n'), list.count('o'), list.count('p'), list.count('q'), list.count('r'), list.count('s'), list.count('t'), list.count('u'), list.count('v'), list.count('w'), list.count('x'), list.count('y'), list.count('z'),])
 list2 = [x for x in range(1,27)]
 list3 = list2[::-1]
-alphaList = list(string.ascii_lowercase)
+letters = string.ascii_lowercase
+list4 = [x for x in letters]
 print(list2)
 print(list3)
-print(alphaList)
+print(list4)
+b=(zip(list1,list3,list4))
+list5 = [x for x in b]
+list5.sort(reverse=True)
+c = 0
+while c < 26:
+    if list5[c][0] != 0:
+        print(str(list5[c][2])*int(list5[c][0]))
+    c += 1
 
     
