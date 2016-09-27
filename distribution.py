@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Finn
+Credit: none
 
 Assignment:
 
@@ -45,17 +45,12 @@ list1.extend([list.count('a'), list.count('b'), list.count('c'), list.count('d')
 list2 = [x for x in range(1,27)]
 list3 = list2[::-1]
 letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-print(list2)
-print(list3)
 b=(zip(list1,list3,letters))
 list4 = [x for x in b]
 list4.sort(reverse=True)
-print(list4)
-print(list4[1][2])
 c = 0
-while c < 26:
-    if list4[c][0] != 0:
-        print(str(list4[c][2])*int(list4[c][0]))
-    c += 1
+while c < 26 and list4[c][0] != 0:
+    print(str(list4[c][2])*int(list4[c][0]))
+    c = c + 1
 
     
