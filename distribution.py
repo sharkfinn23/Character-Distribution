@@ -44,18 +44,18 @@ list1=[]
 list1.extend([list.count('a'), list.count('b'), list.count('c'), list.count('d'), list.count('e'), list.count('f'), list.count('g'), list.count('h'), list.count('i'), list.count('j'), list.count('k'), list.count('l'), list.count('m'), list.count('n'), list.count('o'), list.count('p'), list.count('q'), list.count('r'), list.count('s'), list.count('t'), list.count('u'), list.count('v'), list.count('w'), list.count('x'), list.count('y'), list.count('z'),])
 list2 = [x for x in range(1,27)]
 list3 = list2[::-1]
-letters = string.ascii_lowercase
-list4 = [x for x in letters]
+letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 print(list2)
 print(list3)
+b=(zip(list1,list3,letters))
+list4 = [x for x in b]
+list4.sort(reverse=True)
 print(list4)
-b=(zip(list1,list3,list4))
-list5 = [x for x in b]
-list5.sort(reverse=True)
+print(list4[1][2])
 c = 0
 while c < 26:
-    if list5[c][0] != 0:
-        print(str(list5[c][2])*int(list5[c][0]))
+    if list4[c][0] != 0:
+        print(str(list4[c][2])*int(list4[c][0]))
     c += 1
 
     
