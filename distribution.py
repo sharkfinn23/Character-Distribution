@@ -39,6 +39,7 @@ Notice about this example:
 astring=(input(" Please enter a string of text (the bigger the better): "))
 print('The distribution of characters in "'+astring+'" is: ')
 list=list(astring)
+string=string.lowercase()
 list1=[]
 list1.extend([list.count('a'), list.count('b'), list.count('c'), list.count('d'), list.count('e'), list.count('f'), list.count('g'), list.count('h'), list.count('i'), list.count('j'), list.count('k'), list.count('l'), list.count('m'), list.count('n'), list.count('o'), list.count('p'), list.count('q'), list.count('r'), list.count('s'), list.count('t'), list.count('u'), list.count('v'), list.count('w'), list.count('x'), list.count('y'), list.count('z'),])
 list2 = [x for x in range(1,27)]
